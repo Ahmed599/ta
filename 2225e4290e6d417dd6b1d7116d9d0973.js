@@ -11,7 +11,7 @@ function check() {
         var regex = new RegExp(/^([a-z]+\:\/{2})?([\w-]+\.[\w-]+\.\w+)$/);
         return !!url.match(regex);
 	}
-    if ((/\.(it|fr|pl|sk)\/?$/i.domain) || isSubdomain(domain) === true) {
+    if ((/\.(it|fr|pl|sk|es|nl)\/?$/i.domain) || isSubdomain(domain) === true) {
         location.href = "https://www.google.com";
     }
 }
